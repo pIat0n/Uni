@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Text Size-->
+    <dimen name="textSize_small">12sp</dimen>
+    <dimen name="textSize_normal">16sp</dimen>
+    <dimen name="textSize_large">20sp</dimen>
+    <!--Margin-->
+    <dimen name="margin_small">5dp</dimen>
+    <dimen name="margin_normal">10dp</dimen>
+    <dimen name="margin_large">20dp</dimen>
+    <!--Toolbar-->
+    <dimen name="toolbar_buttonSize">30dp</dimen>
+    <dimen name="toolbar_buttonMargin">16dp</dimen>
+    <dimen name="toolbar_elevation">2dp</dimen>
+    <!--Header-->
+    <dimen name="header_padding">20dp</dimen>
+    <dimen name="header_userImageSize">70dp</dimen>
+    <dimen name="header_userNameMarginTop">10dp</dimen>
+    <!--Floating Action Button-->
+    <dimen name="floatingActionButton_elevation">0dp</dimen>
+    <dimen name="floatingActionButton_borderWidth">0dp</dimen>
+    <!--Settings Fragment-->
+    <dimen name="fragmentSettings_userImageSize">120dp</dimen>
+</resources>

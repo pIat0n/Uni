@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.ContactsFragment">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/fragmentContacts_toolbar"
+        style="@style/Toolbar">
+        <ImageView
+            android:id="@+id/fragmentContacts_toolbarButton"
+            style="@style/ToolbarButton"
+            android:layout_marginStart="@dimen/toolbar_buttonMargin"
+            android:src="@drawable/ic_arrow_back"/>
+        <TextView
+            android:id="@+id/fragmentContacts_toolbarTitle"
+            style="@style/ToolbarTitle"
+            android:text="@string/contacts"/>
+    </androidx.appcompat.widget.Toolbar>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fragmentContacts_newContactButton"
+        style="@style/FloatingButton"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/margin_large"
+        app:elevation="@dimen/floatingActionButton_elevation"
+        app:borderWidth="@dimen/floatingActionButton_borderWidth"
+        app:rippleColor="@color/colorWhite"
+        android:src="@drawable/ic_new_contact"
+        app:tint="@color/colorWhite"/>
+</RelativeLayout>

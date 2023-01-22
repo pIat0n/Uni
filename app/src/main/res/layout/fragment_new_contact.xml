@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.NewContactFragment">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/fragmentNewContact_toolbar"
+        style="@style/Toolbar">
+        <ImageView
+            android:id="@+id/fragmentNewContact_toolbarButton"
+            style="@style/ToolbarButton"
+            android:layout_marginStart="@dimen/toolbar_buttonMargin"
+            android:src="@drawable/ic_arrow_back"/>
+        <TextView
+            android:id="@+id/fragmentNewContact_toolbarTitle"
+            style="@style/ToolbarTitle"
+            android:text="@string/new_contact"/>
+    </androidx.appcompat.widget.Toolbar>
+</RelativeLayout>
