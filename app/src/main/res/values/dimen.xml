@@ -16,6 +16,8 @@
     <dimen name="header_padding">20dp</dimen>
     <dimen name="header_userImageSize">70dp</dimen>
     <dimen name="header_userNameMarginTop">10dp</dimen>
+    <!--Rounded Image View-->
+    <dimen name="roundedImageView_borderWidth">0dp</dimen>
     <!--Floating Action Button-->
     <dimen name="floatingActionButton_elevation">0dp</dimen>
     <dimen name="floatingActionButton_borderWidth">0dp</dimen>

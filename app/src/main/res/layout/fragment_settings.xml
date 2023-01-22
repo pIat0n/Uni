@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".fragments.SettingsFragment">
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/fragmentSettings_toolbar"
@@ -17,5 +18,34 @@
             style="@style/ToolbarTitle"
             android:text="@string/settings"/>
     </androidx.appcompat.widget.Toolbar>
-
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fragmentSettings_toolbar">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/fragmentSettings_userImage"
+                android:layout_width="@dimen/fragmentSettings_userImageSize"
+                android:layout_height="@dimen/fragmentSettings_userImageSize"
+                android:src="@drawable/example"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="@dimen/margin_large"
+                android:layout_centerHorizontal="true"
+                app:riv_oval="true"
+                app:riv_border_width="@dimen/roundedImageView_borderWidth"/>
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fragmentSettings_changePhotoButton"
+                style="@style/FloatingButton"
+                app:fabSize="mini"
+                android:layout_alignBottom="@id/fragmentSettings_userImage"
+                android:layout_alignEnd="@id/fragmentSettings_userImage"
+                android:src="@drawable/ic_camera"
+                app:borderWidth="@dimen/floatingActionButton_borderWidth"
+                app:elevation="@dimen/floatingActionButton_elevation"
+                app:rippleColor="@color/colorWhite"
+                app:tint="@color/colorWhite"/>
+        </RelativeLayout>
+    </ScrollView>
 </RelativeLayout>
